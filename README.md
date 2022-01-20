@@ -703,6 +703,12 @@ Decrypt file
 
 (you can use [#base64](#base64 "wikilink") to encode/decode it further)
 
+Encrypt and decrypt with a symmetric key and only in command line
+``` bash
+    gpg -c --batch --passphrase-fd 0 <file> # encrypt
+    gpg -d --batch --passphrase-fd 0 <file> # decrypt
+```
+
 ## php
 
 See where is the php.ini file
@@ -1233,3 +1239,5 @@ To build
 ```
 
 ## jq
+
+## gpg
